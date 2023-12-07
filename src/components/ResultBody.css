@@ -1,0 +1,28 @@
+.perklines li{
+    list-style-type: none;
+    opacity: 0;
+    animation: appear 0.5s forwards;
+}
+
+.perklines li:nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+.perklines li:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.perklines li:nth-child(3) {
+    animation-delay: 1.5s;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: translateX(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
